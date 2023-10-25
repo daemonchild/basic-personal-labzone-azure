@@ -33,5 +33,5 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-#Ignore Lock File
+# Ignore Lock File - Added 
 *terraform.lock*
