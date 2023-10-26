@@ -26,6 +26,12 @@ output "resource_group_name" {
 
 // Storage 
 
+output "tfstate_strgacct_name" {
+  value = azurerm_storage_account.strgacct_tfstate.name
+  sensitive = false
+  description = "Acct name to use for Terraform state."
+}
+
 output "tfstate_container_name" {
   value = azurerm_storage_container.strgcont_tfstate.name
   sensitive = false
